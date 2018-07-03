@@ -1,0 +1,1858 @@
+@charset "utf-8";
+
+body,ul,figure,span,div{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #eeeeee;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+body.white{
+	background: #fff;
+}
+h2{
+	font-weight: normal;
+}
+ul,ol{
+	list-style: none outside none;
+}
+div,li,span,figure,textarea,input,select{
+	box-sizing: border-box;
+}
+.clearfix{
+	content: ".";
+	display: block;
+	/*background-color: red;*/
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#header{
+	width:100%;
+	height: 35px;
+	background: #000000;
+}
+#header .center{
+	max-width:1263px;
+	height: 35px;
+	margin:0 auto;
+}
+#header .loginfo{
+	width: 20%;
+	height: 35px;
+	float: right;
+	line-height: 35px;
+	color: #fff;
+}
+#header .loginfo li{
+	width: 25%;
+	float: left;
+}
+#header .loginfo li:last-child{
+	width: 30%;
+	float: right;
+	text-align: center;
+}
+#header .loginfo li span{
+	color: #ee9c44;
+}
+#nav{
+    max-width:1920px;
+    height: 70px; 
+    margin: 0 auto;
+	background: url(../image/nav.png);
+}
+#nav .center{
+	max-width: 1263px;
+	height: 70px;
+	margin:0 auto;
+}
+#nav .logo{
+	width: 10%;
+	height: 66px;
+	background: url(../image/logo.png) no-repeat left center;
+	float: left;
+}
+#nav .center .link{
+	width: 40%;
+	height: 66px;
+	line-height: 66px;
+	float: left;
+	font-size: 18px;
+	color: #fff;
+}
+#nav .center .link li{
+	float: left;
+	width: 18%;
+	text-align: center;
+	margin-left: 2%;
+	/*background: red;*/
+}
+#nav .center .link li.present{
+	border-bottom: 4px solid #fff;
+}
+#nav .center .link li.present a{
+	color: #c5c5c5;
+}
+#nav .center .link li a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+}
+#nav .center .link li a:hover{
+	color: #c5c5c5;
+}
+#nav .search{
+	width: 200px;
+	height: 70px;
+	background: url(../image/search.png) no-repeat left center;
+	background-size: 200px;
+	float: right;
+	cursor:text;
+}
+
+#banner{
+	max-width: 1263px;
+	/*background:red;*/
+	height: 652px;
+	margin:0 auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+#banner img{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	max-width: 1263px;
+	height: auto;
+}
+
+#banner ul{
+	position: absolute;
+	/*top: 600px;
+	left: 556px;*/
+	top: 90%;
+	left: 45%;
+	/*background-color: red;*/
+	z-index: 4;
+}
+#banner ul li{
+	font-size: 30px;
+	color: #fff;
+	float: left;
+	margin:0 10px;
+	cursor: pointer;
+}
+#banner .left{ 
+	width: 61px;
+	height: 61px;
+	position: absolute;
+	top: 296px;
+	left: 20px;
+	/*background: red;*/
+	background: url(../image/bannerLeft.png) no-repeat left center;
+	cursor: pointer;
+	z-index: 4;
+}
+#banner .right{ 
+	width: 61px;
+	height: 61px;
+	position: absolute;
+	top: 296px;
+	right: 20px;
+	/*background: red;*/
+	background: url(../image/bannerRight.png) no-repeat left center;
+	cursor: pointer;
+	z-index: 4;
+}
+
+#container{
+	max-width: 1263px;
+	margin: 40px auto;
+	/*position: relative;*/
+}
+#container .left{
+	width: 68%;
+	float: left;
+	padding-bottom: 50px;
+	background: #fff;
+}
+#container .left .menu{
+	height: 60px;
+	width: 75%;
+	line-height: 60px;
+}
+#container .left .menu li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	border: 1px solid #e0e6f6;
+}
+#container .left .menu li span{
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	height: 60px;
+	border-bottom: 5px solid #d5ac5e;
+}
+#container .video{
+	width: 92%;
+	/*display: block;*/
+	margin:40px auto 0 auto;
+	/*background: #ccc;*/
+	position :relative;
+	overflow: hidden;
+}
+#container img{
+	width: 48%;
+	float: left;
+}
+#container figcaption{
+	width: 48%;
+	float: right;
+}
+#container figcaption hgroup{
+	padding-top: 15px;
+}
+#container figcaption hgroup h2{
+	font-size: 20px;
+	font-weight: normal;
+}
+#container figcaption hgroup h3{
+	font-size: 16px;
+	font-weight: normal;
+}
+#container figcaption img{
+	width: 7%;
+	height: auto;
+	position :absolute;
+	bottom: 4%;
+}
+#container figcaption span{
+	position :absolute;
+	bottom: 4%;
+	left: 61%;
+}
+#container figcaption em{
+	font-style: normal;
+	position: absolute;
+	bottom: 0;
+	color: #7e7e7e;
+	right: 4%;
+}
+#container .left .page,#find .page,#video .page{
+	/*margin: 50px auto;
+	width: 50%;*/
+	/*background: red;*/
+	width: 60%;
+	margin: 50px auto;
+	position: relative;
+}
+#find .page{
+	width: 40%;
+	padding: 2px 0;
+}
+#container .left .page span,#find .page span,#video .page span{
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+#container .left .page span.next,#find .page span.next,#video .page span.next{
+	position: absolute;
+	left: 70%;
+}
+#container .left .page span.last,#find .page span.last,#video .page span.last{
+	position: absolute;
+	left: 85%;
+}
+#container .left .page ul,#find .page ul,#video .page ul{
+	width: 50%;
+	position: absolute;
+	left: 20%;
+	/*background: red;*/
+}
+#container .left .page ul>li,#find .page ul>li,#video .page ul>li{
+	float: left;
+	width: 16%;
+	text-align: center;
+}
+#container .left .page ul>li>span,#find .page ul>li>span,#video .page ul>li>span{
+	width: 50%;
+	border-bottom: 2px solid #eab13c;
+}
+#container .right{
+	width: 30%;
+	float: right;
+	/*background: #fff;*/
+}
+#container .right .sidebox{
+	margin: 0 0 10px 0;
+	background: #fff;
+
+}
+
+#container .right .code img{
+	width: 100%;
+
+}
+#container .figure{
+	width: 80%;
+	margin: 0 auto; 
+	text-align: center;
+    padding:10px 0;
+}
+#container .figure figure{
+     display: inline-block;
+     padding: 4px;
+     color: #666;
+}
+/*#container .tag{
+	padding: 10px 0;
+	margin: 90%;
+	margin: 0 auto;
+}*/
+#container .tag li{
+	display: inline-block;
+	text-align: center;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	width: 93px;
+	height: 35px;
+	line-height: 35px;
+	background: url(../image/hot.png) no-repeat left center;
+	
+}
+/*#cotainer .movie{
+	width: 90%;
+	margin:0 auto;
+	padding: 10px 0;
+}*/
+#container .movie figure{
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+
+}
+#container .movie figure img{
+	width: 100%;
+}
+#container .movie figcaption{
+	width: 100%;
+	position: relative;
+	/*background: red;*/
+	/*text-align: left;*/
+}
+#container .movie figcaption h3{
+	font-weight: normal;
+}
+#container .movie .footer{
+	width: 100%;
+	height: 30px;
+	/*background: green;*/
+	line-height: 30px;
+}
+#container .movie .edit{
+	
+	/*background-size: 10px; */
+	position: absolute;
+	right: 20%;
+	bottom: 4%;
+}
+#container .task{
+	position: relative;
+}
+#container .task span{
+	position: absolute;
+	top:40px;
+	right: 5%;
+}
+#container .ques{
+	width: 90%;
+	margin: 0 auto;
+}
+#container .ques figure{
+	display: inline-block;
+}
+#container .ques figcaption{
+	margin: 20px 0;
+	letter-spacing: 2;
+	width: 100%;
+}
+#container .ques .edit{
+	position: absolute;
+	right: 20%;
+	bottom: 5%;
+}
+#container .ques em{
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+#container .ques figure img{
+	width: 90%;
+}
+#container .sidebox{
+	/*width: 90%;*/
+	/*margin: 0 auto;*/
+	padding: 10px 0;
+}
+#container .edit{
+	width: 20px;
+	height: 20px;
+	background: url(../image/edit.png) no-repeat left center;
+	display: inline-block;
+}
+
+/*find界面*/
+#find,#channel,#men,#more,#more2,#other,#video{
+	max-width: 1263px;
+	margin: 40px auto;
+	position: relative;
+}
+
+#container h2.public,#find h2.public,#channel h2,#men h2.public,#more h2.public,#more2 h2.public,#other h2.public,#video h2.public{
+	font-weight: normal;
+	font-size: 22px;
+	/*display: block;*/
+	text-indent: 20px;
+	border-left: 5px solid #ee9c44;
+	padding: 10px 0;
+}
+/*#container .right .sidebox h2{
+	font-weight: normal;
+	font-size: 22px;
+	text-indent: 10px;
+	border-left: 5px solid #ee9c44;
+	padding: 10px 0;
+}*/
+#find span.public,#channel span,#more span.public,#more2 span.public{
+	position: absolute;
+	top: 45px;
+	left: 150px;
+	color: #ee9c44;
+}
+#find .find,#other .other,#video .video{
+	width: 100%;
+	background: #fff;
+	padding: 10px 0;
+	position: relative;
+	margin-bottom: 40px;
+}
+#find .event img{
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+}
+#find .event figcaption{
+	width: 95%;
+	margin: 0 auto;
+}
+#find .event figcaption h2{
+	font-weight: normal;
+}
+
+#find .more h3{
+	text-indent: 20px;
+	font-weight: normal;
+}
+#find .more p,#other .video p.public{
+	position: absolute;
+	top: 0;
+	right: 3%;
+	font-size: 25px;
+	color: #929292;
+	font-weight: bold;
+}
+#other .video p.public{
+	top: 15px;
+}
+#find .more em,#other .video em{
+	margin-right: 20px;
+	color: #000;
+}
+#find .more .center{
+	width: 95%;
+	margin: 0 auto;
+}
+#find .more figure{
+	width: 32.6%;
+	display: inline-block;
+	text-align: center;
+}
+#find .more figure img{
+	width: 90%;
+}
+#find .more figure figcaption{
+	width: 90%;
+	margin: 0 auto;	
+	text-align: left;
+/*	background: red;*/
+	position: relative;
+}
+#find .more figure figcaption h3{
+	font-weight: normal;
+	line-height: 2;
+	text-indent: 0;
+}
+#find .more figure figcaption em{
+	font-style: normal;
+	position: absolute;
+	right: 2px;
+	top: 5%;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 10px;
+	background: #ec6941;
+	color: #fff;
+}
+#find .more figure figcaption div{
+	background: url(../image/time.png) no-repeat left center;
+	text-indent: 40px;
+	background-size: 20px;
+}
+#find .note figure,#find .reward figure{
+	width: 90%;
+	margin: 40px auto 0 auto;
+	position: relative;
+	overflow: hidden;  
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ccc;
+	/*神奇的overflow*/
+	/*display: inline-block;*/
+} 
+#find figure.noborder{
+	border:none;
+}
+#find .note figure img{
+	width: 40%;
+	float: left;
+}
+#find .note figure figcaption{
+	width: 58%;
+	float: right;
+}
+#find .note figure span{
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	text-indent: 30px;
+	background: url(../image/edit.png) no-repeat left center;
+}
+
+#find .note h2,#find .note h3{
+	font-weight: normal;
+}
+#find .reward figure img{
+	width: 10%;
+	float: left;
+	cursor: pointer;
+}
+#find .reward figure figcaption{
+	width: 85%;
+	float: right;
+}
+#find .reward figure figcaption h3{
+	font-weight: normal;
+}
+#find .reward figure figcaption em{
+	font-style: normal;
+}
+#find .reward figure figcaption span{
+	position: absolute;
+	right: 2%;
+
+}
+#find .reward figure figcaption span.reward{
+	top:0;
+	width: 100px;
+	height: 35px;
+	background: url(../image/task2.png) no-repeat left center;
+}
+#find .reward figure figcaption h3.name{
+	color:#ee9c44;
+}
+#channel{
+	padding:10px 0;
+}
+#channel figure{
+	width: 90%;
+	margin: 0 auto;
+}
+#channel figure img{
+	width: 31%;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 1%;
+}
+#men .left{
+	width: 25%;
+	float: left;
+	background: #fff;
+}
+#men .left .men{
+	padding: 30px 0;
+	border-bottom: 1px solid #ccc;
+}
+#men .left .cat figure{
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	position: relative;
+}
+#men .left .cat figure span{
+	background: url(../image/setting.png) no-repeat left center;
+	width: 15%;
+	height: 15%;
+	background-size: 90%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+#men .left .cat figure img{
+	width: 70%;
+	padding-top: 30px;
+}
+#men .left .cat h2{
+	font-weight: normal;
+}
+#men .left .info ul{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+} 
+#men .left .info ul>li{
+	line-height: 2.5;
+	/*background: url(../image/info1.png) no-repeat left center;*/
+	text-indent: 40px;
+}
+#men .left .info ul>li.info1{
+	background: url(../image/info1.png) no-repeat left center;
+}
+#men .left .info ul>li.info2{
+	background: url(../image/info2.png) no-repeat left center;
+}
+#men .left .info ul>li.info3{
+	background: url(../image/info3.png) no-repeat left center;
+}
+#men .left .info ul>li.info4{
+	background: url(../image/info4.png) no-repeat left center;
+}
+#men .left .info ul>li>span{
+	position:absolute;
+	right: 0;
+}
+#men .left .record ul{
+	width: 80%;
+	margin: 0 auto;
+}
+#men .left .record ul li{
+	width: 100%;
+	line-height: 60px;
+	border-bottom: 1px solid #b7b7b7;
+	position: relative;
+	/*background: red;*/
+}
+#men .left .record ul li span{
+	font-size: 30px;
+	color: #ee9c44;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#men .left .record div{
+	margin-top: 30px;
+	font-size: 20px;
+	width: 100%;
+	/*margin: 0 auto;*/
+	text-align: center;
+	color: #ccc;
+}
+#men .left .record div em{
+	font-style: normal;
+	padding-right: 20px;
+	color: #000;
+}
+#men .right{
+	width: 73%;
+	float: right;
+	background: #fff;
+}
+#men .right .work{
+	padding: 20px 0;
+	/*background:red;*/
+	overflow: hidden;
+	/*margin:20px 0;*/
+} 
+#men .right .work .center,#other .video .center{
+	width: 90%;
+	/*background: red;*/
+	margin: 0 auto;
+}
+#men .right .work .center figure{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+#men .right .work .center figure img{
+	width: 90%;
+}
+#men .right .work .center figcaption{
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+}
+#men .right h3{
+	font-weight: normal;
+}
+#men .right .work .center figcaption p{
+	color: #ee9c44;
+}
+#men .right .database figure{
+	width: 75%;
+	margin: 40px auto;
+	/*padding: 40px 0;*/
+}
+#men .right .database figure img{
+	width: 100%;
+}
+#more,#more2{
+	padding: 10px 0;
+	overflow: hidden;
+	/*background: red;*/
+}
+#more figure,#more2 figure{
+	width: 100%;
+	/*background: green;*/
+	border-top: 1px solid #ccc;
+	padding-top: 40px;
+	display: inline-block;
+	position: relative;
+	/*background: red;*/
+	/*overflow: hidden;*/
+}
+#more figure .add1{
+	width: 60%;
+	float: left;
+}
+#more figure .add2{
+	width: 45%;
+	float: right;
+	position: absolute;
+	top: 9%;
+	right: 0;
+	z-index: -1;
+}
+/*#more figure .add1{ 
+	width: 60%;
+	height: 500px;
+	background: url(../image/load1.png);
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	color: #737373;
+}
+#more figure .add2{
+	width: 45%;
+	height: 350px;
+	background-origin: border-box;
+	float: right;
+	position: absolute;
+	top: 16%;
+	right: 0;
+	border:1px dashed #ee9c44;
+	z-index: -1;
+
+}
+#more figure .add2 .content{
+	width: 98%;
+	height: 98%;
+	position:absolute;
+	top: 1%;
+	left: 1%;
+	background: #eee;
+}
+#more figure .add2 .content span{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	font-size: 30px;
+	color: #737373;
+}*/
+#more figure form{
+	width: 100%;
+	clear: both;
+	padding-top: 20px;
+	overflow: hidden;
+	margin:0 auto;
+	position: relative;
+	
+}
+#more .title,#more .class{
+	width: 50%;
+	/*margin-top: left;*/
+	float: left;
+	/*background: green;	*/
+}
+#more .des,#more .button,#more .checkbox{
+	margin: 20px 0;
+	width: 100%;
+	float:left;
+	text-indent: 10px;
+}
+#more .title input{
+	width: 90%;
+	height:40px;
+	border: 1px solid #ccc;
+	float: left;
+	padding-left: 10px;
+}
+#more .class select{
+	width: 90%;
+	height:42px;
+	border: 1px solid #ccc;
+	float: right;
+	padding-left: 10px;
+	/*position: absolute;
+	top: 0;
+	right: 0;*/
+}
+#more .des textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+#more .button{
+	text-align: center;
+}
+#more .button div{
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: none;
+	background: #ee9c44;
+	cursor: pointer;
+}
+#more .button div a{
+	color:#fff;
+	text-decoration: none;
+}
+#more .checkbox{
+	text-indent: 0;
+}
+#more .checkbox span{
+	display: block;
+	text-indent: 22px;
+	line-height: 2;
+}
+#more2 figure{
+	padding-bottom:40px;
+	border-bottom: 1px solid #ccc;
+}
+#more2 figure img{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	/*background: red;*/
+}
+#more2 figure figcaption{
+	padding: 20px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+#more2 figure figcaption h3{
+	font-weight: normal;
+}
+#more2 figure figcaption div{
+	margin :20px 0;
+	width: 130px;
+	height:35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 10px;
+	background: #ee9c44;
+	float: left;
+	color: #fff;
+	margin-right:20px;
+}
+#more2 .success{
+	width: 90%;
+	margin: 0 auto;
+	padding-top:20px;
+}
+#more2 .success h3{
+	font-weight: normal;
+	background: url('../image/gou.png') no-repeat left center;
+	/*width: 100px;
+	height: 20px;*/
+	text-indent: 40px;
+}
+#more2 .success ul li{
+	line-height: 3;
+	float: left;
+}
+#more2 .success ul li.half{
+	width: 50%;
+	float: left;
+}
+#more2 .success ul li.all{
+	width: 100%;
+}
+#more2 .success ul li label{
+	/*display: block;*/
+	padding:8px 20px;
+	background: #f7d3d3;
+	margin-right: 10px;
+}
+
+#other .info figure{
+	width: 90%;
+	padding :20px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#other .info figure img{
+	width: 15%;
+	float: left;
+}
+#other .info figure figcaption{
+	width: 80%;
+	float: right;
+}
+#other .info figure figcaption h2{
+	font-weight: normal;
+}
+#other .info figure figcaption p{
+	color: #737373;
+}
+#other .info figure figcaption ul{
+	width: 100%;
+	/*background: red;*/
+	padding: 10px 0;
+}
+#other .info figure figcaption ul li{
+	width: 30%;
+	float: left;
+	/*background: red;*/
+	letter-spacing: 3px;
+	color: #737373;
+	/*background: url(../image/info1.png) no-repeat left center;*/
+	text-indent: 40px;
+	/*position: relative;*/
+}
+#other .info figure figcaption .fans{
+	background: url(../image/info1.png) no-repeat left center;
+}
+#other .info figure figcaption .atten{
+	background: url(../image/info2.png) no-repeat left center;
+}
+#other .info figure figcaption .video{
+	background: url(../image/info3.png) no-repeat left center;
+}
+#other .info figure figcaption span{
+	margin-left: 30px;
+}
+
+#other .video .center figure{
+	width: 24.5%;
+	display: inline-block;
+	text-align: center;
+}	
+#other .video .center figure img{
+	width: 95%;
+	margin: 0 auto;
+}
+#other .video .center figure figcaption{
+	width: 95%;
+	margin: 0 auto;
+	text-align: left;
+}
+#other .video .center figure figcaption h3{
+	font-weight: normal;
+}
+#other .video .center figure figcaption p{
+	color: #ee9c44;
+}
+#video .video{
+	/*background: red;*/
+	/*text-align: center;*/
+	/*overflow: hidden;*/
+
+}
+#video .play video{
+	padding-top: 10px;
+	display: inline-block;
+	width: 92%;
+	position: relative;
+	left: 4%;
+	/*position:absolute;*/
+	/*left: 3%;*/
+}
+#video .play figure{
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0;
+	/*background: red;*/
+	overflow: hidden;
+}
+#video .play figure img{
+	width: 10%;
+	float: left;
+}
+#video .play figure figcaption{
+	width: 86%;
+	float: right;
+	/*background: red;*/
+	position: relative;
+}
+#video .play figure figcaption span{
+	position: absolute;
+	top: 20px;
+	left: 150px;
+	color: #737373;
+}
+#video .play figure figcaption span.right{
+	left: 250px;
+}
+#video .play figure figcaption p{
+	color: #737373;
+}
+#video .play figure figcaption .atten{
+	width: 40px;
+	height: 40px;
+	background: url(../image/info2.png) no-repeat left center;
+	background-size: 40px; 
+	position: absolute;
+	right: 0;
+	bottom: 2%;
+}
+#video .des .center,#video .comment .center{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	/*background: red;*/
+	overflow: hidden;
+}
+#video .des .center em{
+	font-style: normal;
+	color:#737373;
+}
+#video .des .center p.mod{
+	margin-top: 30px;
+	line-height: 2;
+}
+#video .des .center .date{
+	text-align: right;
+}
+#video .des .money{
+	text-align: center;
+}
+#video .des .money span{
+	display: block;
+	background: url(../image/dollar.png) no-repeat left center;
+	width: 50px;
+	height: 50px;
+	background-size: 50px;
+	margin: 0 auto;
+}
+#video .des .money p{
+	line-height: 0.5;
+	color: #9b9b9b;
+}
+#video .des .money p.red{
+	color: #f2555c;
+}
+#video .comment .center{
+	border-top: 1px solid #bebdbc;
+	overflow: hidden;
+	/*background: red;*/
+}
+#video .comment figure{
+	width: 90%;
+	position: relative;
+	left: 5%;
+	padding: 20px 0;
+	display: inline-block;
+}
+#video .comment figure.border{
+	border-bottom: 1px solid #ccc;
+}
+#video .comment  figure img{
+	width: 10%;
+	float: left;
+}
+#video .comment figure figcaption{
+	width: 88%;
+	float: right;
+	position: relative;
+}
+#video .comment figure p{
+	line-height: 1;
+}
+#video .comment figure p.name{
+	color: #ea8d3c;
+}
+#video .comment figure p.line{
+	line-height: 1.5;
+}
+#video .comment figure em{
+	line-height: 2.5;
+	color: #737373;
+	font-style: normal;
+}
+#video .comment figure em.back{
+	position: absolute;
+	right: 0;
+	color: #fe8663;
+}
+#video .comment figure.pub{
+	margin: 20px 0;
+	/*background: red;*/
+}
+#video .comment figure.pub img{
+	width: 10%;
+	float: left;
+}
+#video .comment figure.pub figcaption{
+	width: 88%;
+	float: right;
+	position: relative;
+}
+#video .comment figure.pub figcaption textarea{
+	width: 100%;
+	text-indent: 5px;
+	resize: none;
+}
+#video .comment figure.pub figcaption span{
+	display: block;
+	background: url(../image/dollar.png) no-repeat left center;
+	width: 30px;
+	height: 30px;
+	background-size: 29px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#video .comment figure.pub button{
+	width: 150px;
+	height: 40px;
+	border: none;
+	border-radius: 20px;
+	background: #eab13c;
+	color: #fff;
+	margin-top: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-75px);
+}
+/*#video .page ul{
+	background: green;
+}
+#video .page ul li{
+	background: orange;
+}*/
+#footer{
+	width: 100%;
+	height: 80px;
+	background: #000000;
+	float: left;
+	margin-top: 40px;
+}
+#footer ul{
+	max-width: 500px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto;
+}
+#footer ul li{
+	color: #929292;
+	float: left;
+	margin-right: 20px;
+}
+
+
+/*媒体查询*/
+/*当页面大于1200px，大屏幕，一般是pc端*/
+@media (min-width: 1200px){
+	
+}
+
+/*当页面大于992px,小于1199px时，中等屏幕，分辨率低的pc*/
+@media (max-width: 1199px) and (min-width: 992px){
+	#container figcaption hgroup{
+		padding-top: 0;
+	}
+}
+
+/*在768px和991px之间的屏幕，小屏幕，主要是pad*/
+@media (max-width: 991px) and (min-width: 768px){
+	#container figcaption hgroup{
+		padding-top: 0;
+	}
+	#banner .left,#banner .right{
+		width: 50px;
+		height: 50px;
+		background-size: 50px; 
+	}
+	#find .more figure figcaption h3{
+		line-height: 0.8;
+	}
+	#find .more figure figcaption em{
+		position: relative;
+		display: block;
+		width: 60px;
+		height: 30px;
+		left: 2px;
+	}
+	#find .more figure figcaption div{
+		margin-top: 15px;
+	}
+	#other .video .center{
+		overflow: hidden;
+	}
+	#other .video .center figure{
+		float: left;
+	}
+	#channel figure img{
+		width: 30.9%;
+	}	
+	#men .right h3{
+		font-size:17px;
+	}
+}
+
+/*在480和767之间的屏幕，超小屏幕，主要是手机*/
+@media (max-width: 767px) and (min-width: 480px){
+	#container h2.public,#find h2.public,#channel h2,#men h2.public,#more h2.public,#more2 h2.public,#other h2.public,#video h2.public{
+		font-size: 20px;
+	}
+	#find span.public,#channel span,#more span.public,#more2 span.public{
+		top: 40px;
+	}
+	#header .loginfo{
+		width: 200px;
+	}
+	#footer{
+		height: 60px;
+	}
+	#footer ul{
+		width: 400px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#footer ul li{
+		font-size: 14px;
+		margin-right: 13px;
+	}
+	#nav{
+		height: 60px;
+	}
+	#nav .search{
+		width: 30px;
+		height: 30px;
+		background: url(../image/search2.png) no-repeat left center;
+		background-size: 30px;
+		cursor:pointer;
+		position: relative;
+		top: 15px;
+		right: 15px;
+	}
+	#nav .logo{
+		width: 12%;
+		height: 60px;
+		background: url(../image/logo.png) no-repeat left center;
+		background-size: 50px;
+		float: left;
+	}
+	#nav .center .link{
+		width: 60%;
+		height: 56px;
+		line-height: 56px;
+	}
+	#nav .center .link li{
+		float: left;
+		font-size: 16px;
+	}
+	#container figcaption hgroup{
+		padding-top: 0;
+	}
+	#container figcaption hgroup h2{
+		font-size: 14px;
+
+	}
+	#container figcaption hgroup h3{
+		font-size: 12px;
+		height: 16px;
+		overflow: hidden;
+		margin-top: -5px;
+	}
+	#container .left,#container .right{
+		width: 100%;
+	}
+	#container .right .code{
+		margin-top: 10px;
+	}
+	#container .left .menu{
+		width: 100%;
+	}
+	#container figcaption img{
+		width: 6%;
+		bottom: 0;
+	}
+	#container figcaption span{
+		bottom: 0;
+		font-size: 14px;
+	}
+	#container figcaption em{
+		right: 0;
+		font-size: 12px;
+	}
+	#container .left .page,#find .page,#video .page{
+		font-size: 14px;
+		width: 80%;
+	}
+	#banner .left,#banner .right{
+		width: 30px;
+		height: 30px;
+		background-size: 30px; 
+	}
+	#banner ul li{
+		font-size: 20px;
+	}
+	#find .event figcaption h2{
+		font-size: 18px;
+	}
+	#find .event figcaption p{
+		font-size: 14px;
+	}
+	#find .more figure figcaption h3{
+		font-size: 16px;
+		line-height: 0.3;
+	}
+	#find .more figure figcaption em{
+		position: relative;
+		display: block;
+		width: 50px;
+		height: 25px;
+		line-height: 25px;
+		top: -2px;
+		left: 2px;
+		font-size: 12px;
+	}
+	#find .more figure figcaption div{
+		margin-top: 15px;
+		font-size: 14px;
+		background-size: 15px;
+		text-indent: 20px;
+	}
+	#find .more figure{
+		width: 48%;
+		margin-bottom: 10px;
+	}
+	#find .note figure figcaption{
+		width: 58%;
+		float: right;
+	}
+	#find .note figure span{
+		/*position: absolute;
+		right: 0;
+		bottom: 10%;
+		text-indent: 30px;
+		background: url(../image/edit.png) no-repeat left center;*/
+		font-size: 12px;
+		background-size: 15px;
+	}
+	#find .note figcaption h2{
+		font-size: 16px;
+		line-height: 0.2;
+	}
+	#find .note h3{
+		font-size: 14px;
+	}
+	#find .reward figure figcaption h3{
+		font-size: 14px;
+	}
+	#find .reward figure figcaption span.reward{
+		width: 70px;
+		height: 30px;
+		background-size: 60px; 
+	}
+	#channel figure img{
+		width: 47%;
+	}
+	#find .reward figure figcaption h3.name{
+		color:#ee9c44;
+	}
+	#other .info figure img{
+		width: 20%;
+	}
+	#other .info figure figcaption{
+		width: 78%;
+	}
+	#other .info figure figcaption h2{
+		font-size: 16px;
+	}
+	#other .info figure figcaption p{
+		font-size: 14px;
+	}
+	#other .info figure figcaption ul{
+		width: 100%;
+		/*background: red;*/
+		padding: 8px 0;
+	}
+	#other .info figure figcaption ul li{
+		width: 33%;
+		letter-spacing: 1.5px;
+		text-indent: 18px;
+		font-size: 14px;
+	}
+	#other .info figure figcaption .fans,#other .info figure figcaption .atten,#other .info figure figcaption .video{
+		background-size: 15px;
+	}
+	#other .info figure figcaption span{
+		margin-left: 8px;
+	}
+	#other .video .center{
+		overflow: hidden;
+	}
+	#other .video .center figure{
+		float: left;
+		width: 49%;
+	}
+	#other .video .center figure figcaption h3{
+		font-size: 16px;
+	}
+	#other .video .center figure figcaption p{
+		font-size: 14px;
+	}
+	#men .left{
+		width: 100%;
+	}
+	#men .left .cat figure{
+		width: 60%;
+		margin: 0 auto;
+
+	}
+	#men .left .cat figure span{
+		width: 30px;
+		height: 30px;
+		background-size: 30px; 
+	}
+	#men .left .cat figure img{
+		width: 60%;
+		padding-top: 10px;
+	}
+	#men .left .cat h2{
+		font-size: 20px;
+	}
+	#men .left .record ul li span{
+		font-size: 25px;
+	}
+	#men .right{
+		width: 100%;
+	}
+	#men .right h3{
+		font-size:17px;
+	}
+	#men .right .work .center figure{
+		width: 49%;
+	}
+	#men .right h3{
+		font-size: 16px;
+	}
+	#men .right .work .center figcaption p{
+		font-size: 14px;
+	}
+	#more figure,#more2 figure{
+		padding-top: 20px;
+	}
+	/*
+	#more figure .add1{
+		width: 60%;
+		position: relative;
+		left: 0;
+		height: 300px;
+		line-height:300px;
+		font-size: 20px;
+	}
+	#more figure .add2{
+		width: 45%;
+		height: 250px;
+		top: 45px;
+	}
+	#more figure .add2 .content span{
+		font-size: 20px;
+	}
+	*/
+	#more2 figure figcaption h3{
+		font-size: 18px;
+	}
+	#more2 .success ul li{
+		font-size: 14px;
+	}
+	#more2 .success ul li.half{
+		width: 100%;
+	}
+	#video .play figure figcaption h2{
+		font-size:18px;
+	}
+	#video .play figure figcaption span{
+		font-size: 14px;
+		top: 15px;
+	}
+	#video .play figure figcaption .atten{
+		width: 30px;
+		height: 30px;
+		background-size: 30px;
+	}
+	#video .des .center em,#video .des .center p{
+		font-size: 14px;
+	}
+	#video .comment figure p,#video .comment figure em{
+		font-size: 14px;
+	}
+}
+
+/*小于479的屏幕，微小屏幕，主要是手机*/
+@media (max-width: 479px){
+	.hidden{
+		display: none;
+	}
+	#container h2.public,#find h2.public,#channel h2,#men h2.public,#more h2.public,#more2 h2.public,#other h2.public,#video h2.public{
+		font-size: 20px;
+	}
+	#find span.public,#channel span,#more span.public,#more2 span.public{
+		top: 40px;
+	}
+	#header .loginfo{
+		width: 200px;
+	}
+	#footer{
+		height: 60px;
+	}
+	#footer ul{
+		width: 248px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		margin: 0 auto;
+		/*background:red;*/
+	}
+	#footer ul li{
+		font-size: 14px;
+		margin-right: 13px;
+	}
+	#nav{
+		height: 60px;
+	}
+	#nav .search{
+		width: 20px;
+		height: 20px;
+		background: url(../image/search2.png) no-repeat left center;
+		background-size: 20px;
+		cursor:pointer;
+		position: relative;
+		top: 20px;
+		right: 10px;
+	}
+	#nav .logo{
+		width: 12%;
+		height: 60px;
+		background: url(../image/logo.png) no-repeat left center;
+		background-size: 30px;
+		float: left;
+	}
+	#nav .center .link{
+		width: 77%;
+		height: 56px;
+		line-height: 56px;
+	}
+	#nav .center .link li{
+		float: left;
+		font-size: 16px;
+	}
+	#container figcaption hgroup{
+		padding-top: 0;
+	}
+	#container figcaption hgroup h2{
+		font-size: 14px;
+	}
+	#container figcaption hgroup h3{
+		font-size: 12px;
+		height: 16px;
+		overflow: hidden;
+		margin-top: -5px;
+	}
+	#container .left,#container .right{
+		width: 100%;
+	}
+	#container .right .code{
+		margin-top: 10px;
+	}
+	#container .left .menu{
+		width: 100%;
+	}
+	#container .left .menu li{
+		/*font-size: 12px;*/
+	}
+	#container .left .menu li span{
+		width: 100%;
+	}
+	#container figcaption img{
+		width: 6%;
+		bottom: 0;
+	}
+	#container figcaption span{
+		bottom: 0;
+		font-size: 14px;
+	}
+	#container figcaption em{
+		right: 0;
+		font-size: 12px;
+	}
+	#container .left .page,#find .page,#video .page{
+		font-size: 14px;
+		width: 100%;
+	}
+	#container .movie figcaption h3{
+		font-size: 16px;
+	}
+	#container .movie figcaption p,#container .movie figcaption em{
+		font-size: 14px;
+	}
+	#container .task p,#container .task em{
+		font-size: 14px;
+	}
+	#banner .left,#banner .right{
+		width: 30px;
+		height: 30px;
+		background-size: 30px; 
+	}
+	#banner ul li{
+		font-size: 16px;
+	}
+	#find .event figcaption h2{
+		font-size: 18px;
+	}
+	#find .event figcaption p{
+		font-size: 14px;
+	}
+	#find .more figure figcaption h3{
+		font-size: 14px;
+		line-height: 0.3;
+	}
+	#find .more figure figcaption em{
+		position: absolute;
+		display: block;
+		width: 50px;
+		height: 25px;
+		line-height: 25px;
+		top: 0;
+		right: 0;
+		font-size: 12px;
+	}
+	#find .more figure figcaption div{
+		margin-top: 15px;
+		font-size: 14px;
+		background-size: 15px;
+		text-indent: 20px;
+	}
+	#find .more figure{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#find .note figure img{
+		width: 100%;
+	}
+	#find .note figure figcaption{
+		width: 100%;
+	}
+	#find .note figure span{
+		/*position: absolute;
+		right: 0;
+		bottom: 10%;
+		text-indent: 30px;
+		background: url(../image/edit.png) no-repeat left center;*/
+		font-size: 12px;
+		background-size: 15px;
+	}
+	#find .note figcaption h2{
+		font-size: 16px;
+		line-height: 0.2;
+	}
+	#find .note h3{
+		font-size: 14px;
+	}
+	#find .reward figure figcaption h3{
+		font-size: 14px;
+	}
+	#find .reward figure figcaption span.reward{
+		width: 70px;
+		height: 30px;
+		background-size: 60px; 
+	}
+	#channel figure img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#find .reward figure figcaption h3.name{
+		color:#ee9c44;
+	}
+	#other .info figure img{
+		width: 20%;
+	}
+	#other .info figure figcaption{
+		width: 78%;
+	}
+	#other .info figure figcaption h2{
+		font-size: 14px;
+	}
+	#other .info figure figcaption p{
+		font-size: 14px;
+	}
+	#other .info figure figcaption ul{
+		width: 100%;
+		/*background: red;*/
+		padding: 8px 0;
+	}
+	#other .info figure figcaption ul li{
+		width: 33%;
+		letter-spacing: 1px;
+		text-indent: 0;
+		font-size: 14px;
+	}
+	#other .info figure figcaption .fans,#other .info figure figcaption .atten,#other .info figure figcaption .video{
+		/*background-size: 15px;*/
+		background: none;
+	}
+	#other .info figure figcaption span{
+		margin-left: 5px;
+	}
+	#other .video .center{
+		overflow: hidden;
+	}
+	#other .video .center figure{
+		/*float: left;*/
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#other .video .center figure figcaption h3{
+		font-size: 16px;
+	}
+	#other .video .center figure figcaption p{
+		font-size: 14px;
+	}
+	#men .left{
+		width: 100%;
+	}
+	#men .left .cat figure{
+		width: 60%;
+		margin: 0 auto;
+	}
+	#men .left .cat figure span{
+		width: 30px;
+		height: 30px;
+		background-size: 30px; 
+	}
+	#men .left .cat figure img{
+		width: 60%;
+		padding-top: 10px;
+	}
+	#men .left .cat h2{
+		font-size: 20px;
+	}
+	#men .left .record ul li span{
+		font-size: 25px;
+	}
+	#men .right{
+		width: 100%;
+	}
+	#men .right h3{
+		font-size:17px;
+	}
+	#men .right .work .center figure{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#men .right h3{
+		font-size: 16px;
+	}
+	#men .right .work .center figcaption p{
+		font-size: 14px;
+	}
+	#more figure,#more2 figure{
+		padding-top: 20px;
+	}
+	/*
+	#more figure .add1{
+		width: 60%;
+		position: relative;
+		left: 0;
+		height: 300px;
+		line-height:300px;
+		font-size: 20px;
+	}
+	#more figure .add2{
+		width: 45%;
+		height: 250px;
+		top: 45px;
+	}
+	#more figure .add2 .content span{
+		font-size: 20px;
+	}
+	*/
+	#more figure .add1,#more figure .add2{
+		width: 90%;
+		float: none;
+		position: relative;
+		left: 5%;
+	}
+	#more .title,#more .class{
+		width: 100%;
+		float: none;
+		text-align: center;	
+		margin-top: 20px;
+	}
+	#more .title input,#more .class select{
+		float: none;
+	}
+	#more2 figure figcaption h3{
+		font-size: 16px;
+	}
+	#more2 .success ul li{
+		font-size: 14px;
+	}
+	#more2 .success ul li.half{
+		width: 100%;
+	}
+	#video .play figure figcaption h2{
+		font-size:16px;
+	}
+	#video .play figure figcaption span{
+		font-size: 12px;
+		top: 15px;
+		left: 100px;
+	}
+	#video .play figure figcaption span.right{
+		left: 180px;
+	}
+	#video .play figure figcaption .atten{
+		width: 20px;
+		height: 20px;
+		background-size: 20px;
+	}
+	#video .des .center em,#video .des .center p{
+		font-size: 14px;
+	}
+	#video .comment figure p,#video .comment figure em{
+		font-size: 14px;
+	}
+}
